@@ -8,7 +8,7 @@ Notifications Provider for SparkPost email delivery service
 **Package Manager: PM>** Install-Package Spherus.Notifications.Mail.SparkPost -Version 1.0.1 <br />
 **.NET CLI: >** dotnet add package Spherus.Notifications.Mail.SparkPost --version 1.0.1
 
-# How to use:
+### How to use:
 
 ```csharp
 
