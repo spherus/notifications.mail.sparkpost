@@ -7,8 +7,6 @@ namespace Spherus.Notifications.Mail.SparkPost
 {
     class SparkPostClient
     {
-        protected Uri SparkPoostUri { get { return new Uri("https://api.sparkpost.com/api/v1/transmissions"); } }
-
         protected internal async Task<ServiceResponse<HttpResponseMessage>> SendNotification(TransmissionContent transmission)
         {
             ServiceResponse<HttpResponseMessage> result = new ServiceResponse<HttpResponseMessage>();
