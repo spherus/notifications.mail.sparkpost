@@ -49,6 +49,7 @@ var model = new MailNotificationModel
     }
 };
 
+//If attachments are needed
 model.Attachments = new List<Attachment>
 {
     new Attachment
@@ -59,6 +60,7 @@ model.Attachments = new List<Attachment>
     }
 };
 
+//If inline images are needed
 model.Images = new List<Attachment>
 {
     new Attachment
