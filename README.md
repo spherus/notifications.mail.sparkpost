@@ -44,8 +44,8 @@ var model = new MailNotificationModel
     Text = "<b>Hello</b> from SparkPost. This is <i>a message</i><img src='cid:ImageName' />",
     ReplyTo = new Address 
     { 
-             Email = "reply@yourmail", 
-             Name = "Reply Name" 
+         Email = "reply@yourmail", 
+         Name = "Reply Name" 
     }
 };
 
