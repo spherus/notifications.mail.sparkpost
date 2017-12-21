@@ -1,6 +1,8 @@
 # Spherus.Notifications.Mail.SparkPost
 Notifications Provider for SparkPost email delivery service
 
+## NuGet
+
 [Link to the NuGet package](https://www.nuget.org/packages/Spherus.Notifications.Mail.SparkPost)
 
 **Package Manager: PM>** Install-Package Spherus.Notifications.Mail.SparkPost -Version 1.0.1 <br />
