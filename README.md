@@ -66,7 +66,7 @@ model.Images = new List<Attachment>
     new Attachment
     {
         Data = File.ReadAllBytes("Path to inline image"),
-        Name = "ImageName", // Note that it should be unique
+        Name = "ImageName", // Note that it should be unique, it's using in text as <img src='cid:ImageName' />
         Type = "image/png"
     }
 };
