@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Rostislav Rotaru</Authors>
     <Company>Spherus INC</Company>
     <Product>Spherus.Notifications.Mail.SparkPost</Product>
@@ -14,7 +14,8 @@
     <PackageIconUrl>https://raw.githubusercontent.com/spherus/static/master/spherusnugeticon.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/spherus/notifications.mail.sparkpost</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
-    <PackageTags>spherus notifications mail sparkpost net standard 2.0</PackageTags>
+    <PackageTags>spherus notifications mail sparkpost net standard 2.0 spark post</PackageTags>
+    <PackageReleaseNotes>Minor improvements</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
