@@ -43,10 +43,10 @@ namespace Spherus.Notifications.Mail.SparkPost
                     return result;
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 result.ObjectResult = null;
-                result.Status = new ServiceStatus { Code = 1, Message = "ServiceError" };
+                result.Status = new ServiceStatus { Code = 1, Message = ex.Message };
 
                 return result;
             }
