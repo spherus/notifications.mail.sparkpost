@@ -117,12 +117,12 @@ namespace Spherus.Notifications.Mail.SparkPost
         {
             if (null != mailNotificationModel.ReplyTo)
             {
-                if (!string.IsNullOrEmpty(mailNotificationModel.ReplyTo.Email.Trim())
-                    && !string.IsNullOrEmpty(mailNotificationModel.ReplyTo.Name.Trim()))
+                if (!string.IsNullOrEmpty(mailNotificationModel?.ReplyTo?.Email?.Trim())
+                    && !string.IsNullOrEmpty(mailNotificationModel?.ReplyTo?.Name?.Trim()))
                 {
                     transmissionContent.Content.ReplyTo = $"{ mailNotificationModel.ReplyTo.Name.Trim()}<{mailNotificationModel.ReplyTo.Email.Trim()}>";
                 }
-                else if (!string.IsNullOrEmpty(mailNotificationModel.ReplyTo.Name.Trim()))
+                else if (!string.IsNullOrEmpty(mailNotificationModel?.ReplyTo?.Name?.Trim()))
                 {
                     transmissionContent.Content.ReplyTo = mailNotificationModel.ReplyTo.Email.Trim();
                 }
@@ -156,7 +156,7 @@ namespace Spherus.Notifications.Mail.SparkPost
                 if (items.Count > 0)
                 {
                     result.ObjectResult = new List<EmailRecipient>();
-                    foreach (Mail.Address item in items)
+                    foreach (Address item in items)
                     {
                         result.ObjectResult.Add
                         (
@@ -165,7 +165,7 @@ namespace Spherus.Notifications.Mail.SparkPost
                                 Address = new EmailAddress
                                 {
                                     Email = item.Email.Trim(),
-                                    Name = item.Name.Trim()
+                                    Name = item.Name == null ? string.Empty : item.Name.Trim()
                                 }
                             }
                         );
